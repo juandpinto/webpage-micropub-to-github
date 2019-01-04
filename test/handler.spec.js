@@ -24,11 +24,7 @@ describe('Handler', function () {
 
     const encodedContent = Buffer.from(content || (
       '---\n' +
-      'layout: micropubpost\n' +
       'date: \'2015-06-30T14:19:45.000Z\'\n' +
-      'title: awesomeness is awesome\n' +
-      'lang: en\n' +
-      'slug: awesomeness-is-awesome\n' +
       '---\n' +
       'hello world\n'
     )).toString('base64');
@@ -98,11 +94,7 @@ describe('Handler', function () {
 
       const encodedContent = Buffer.from(
         '---\n' +
-        'layout: micropubpost\n' +
         'date: \'2015-06-30T14:19:45.000Z\'\n' +
-        'title: awesomeness is awesome\n' +
-        'lang: en\n' +
-        'slug: awesomeness-is-awesome\n' +
         'mf-photo:\n' +
         '  - \'http://example.com/foo/media/2015-06-awesomeness-is-awesome/' + mediaFilename + '\'\n' +
         '---\n' +
@@ -159,11 +151,7 @@ describe('Handler', function () {
 
       const encodedContent = Buffer.from(
         '---\n' +
-        'layout: micropubpost\n' +
         'date: \'2015-06-30T14:19:45.000Z\'\n' +
-        'title: awesomeness is awesome\n' +
-        'lang: en\n' +
-        'slug: awesomeness-is-awesome\n' +
         '---\n' +
         'hello world\n'
       );
@@ -217,11 +205,7 @@ describe('Handler', function () {
 
       const encodedContent = Buffer.from(
         '---\n' +
-        'layout: micropubpost\n' +
         'date: \'2015-06-30T14:19:45.000Z\'\n' +
-        'title: awesomeness is awesome\n' +
-        'lang: en\n' +
-        'slug: awesomeness-is-awesome\n' +
         '---\n' +
         'hello world\n'
       );
@@ -264,12 +248,7 @@ describe('Handler', function () {
 
       const encodedContent = Buffer.from(
         '---\n' +
-        'layout: micropubpost\n' +
         'date: \'2015-06-30T14:19:45.000Z\'\n' +
-        'title: \'\'\n' +
-        'lang: en\n' +
-        'slug: \'51585\'\n' +
-        'category: social\n' +
         '---\n' +
         'hello world\n'
       );
@@ -312,11 +291,7 @@ describe('Handler', function () {
 
       const encodedContent = Buffer.from(
         '---\n' +
-        'layout: micropubpost\n' +
         'date: \'2015-06-30T14:19:45.000Z\'\n' +
-        'title: awesomeness is awesome\n' +
-        'lang: en\n' +
-        'slug: awesomeness-is-awesome\n' +
         '---\n' +
         '**hello world**\n'
       );
@@ -363,12 +338,7 @@ describe('Handler', function () {
       return basicTest({
         content: (
           '---\n' +
-          'layout: micropubpost\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
-          'category: xyz\n' +
           '---\n' +
           'hello world\n'
         ),
@@ -386,11 +356,7 @@ describe('Handler', function () {
       return basicTest({
         content: (
           '---\n' +
-          'layout: xyz\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
           '---\n' +
           'hello world\n'
         )
@@ -403,11 +369,7 @@ describe('Handler', function () {
       return basicTest({
         content: (
           '---\n' +
-          'layout: simple\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
           '---\n' +
           'hello world\n'
         )
@@ -421,9 +383,6 @@ describe('Handler', function () {
         content: (
           '---\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
           '---\n' +
           'hello world\n'
         )
@@ -439,11 +398,7 @@ describe('Handler', function () {
       return basicTest({
         content: (
           '---\n' +
-          'layout: micropubpost\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
           '---\n' +
           'hello world\n'
         ),
@@ -460,11 +415,7 @@ describe('Handler', function () {
       return basicTest({
         content: (
           '---\n' +
-          'layout: micropubpost\n' +
           'date: \'2015-06-30T14:19:45.000Z\'\n' +
-          'title: awesomeness is awesome\n' +
-          'lang: en\n' +
-          'slug: awesomeness-is-awesome\n' +
           '---\n' +
           'hello world\n'
         ),
